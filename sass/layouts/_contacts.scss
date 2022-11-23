@@ -1,0 +1,35 @@
+.contacts {
+    display: flex;
+    gap: 30px;
+}
+
+.cotacts__link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--first-contacts-color);
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    --main-trans-duration: 250ms;
+        --main-trans-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.contacts__icon {
+    fill: #757575;
+    margin-right: 10px;
+    transition-property: fill;
+    --main-trans-duration: 250ms;
+        --main-trans-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
+    .cotacts__link:hover & {
+            fill: var(--accent-color);
+        }
+    
+        .cotacts__link:focus & {
+            fill: var(--accent-color);
+        }
+}
