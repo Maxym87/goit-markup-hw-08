@@ -1,4 +1,11 @@
 
+.projects {
+    display: block;
+    @media screen and (max-width: 1199.5px) {
+        display: none;
+    }
+}
+
 .projects__title {
     font-weight: 700;
     font-size: 36px;
@@ -13,6 +20,7 @@
     justify-content: center;
     gap: 30px;
 }
+
 
 .card-list__thumb {
     position: relative;

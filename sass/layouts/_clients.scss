@@ -4,17 +4,27 @@
     line-height: 42px;
     text-align: center;
     color: var(--second-title-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 .icons-list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .icons-list__item {
     height: 92px;
-    flex-basis: calc((100% - 150px) / 6);
+    flex-basis: calc((100% - 30px) / 2);
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 60px) / 3);
+        }
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 150px) / 6);
+        }
 }
 
 .icons-list__link {
@@ -47,4 +57,3 @@
             fill: var(--accent-color);
         }
 }
-
