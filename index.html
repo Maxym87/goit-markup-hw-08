@@ -55,6 +55,64 @@
             >
           </li>
         </ul>
+        <button class="menu-open" type="button" data-menu-open>
+          <svg class="menu-open_icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-mob"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu" data-menu>
+        <button class="menu-close" type="button" data-menu-close>
+          <svg class="menu-close_icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mob-close"></use>
+          </svg>
+        </button>
+        <div class="mob-menu__container">
+          <div class="mob-menu__top">
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link current" href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a class="mob-menu__link link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu__bottom"></div>
+          <ul class="mob-contacts__list list">
+            <li class="mob-contacts__item">
+              <a class="mob-tel__link link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob-contacts__item">
+              <a class="mob-mail__link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-soc list">
+            <li class="mob-soc__item">
+              <a href="#" class="mob-soc__link link">Instagram</a>
+            </li>
+            <li class="mob-soc__item">
+              <a href="#" class="mob-soc__link link">Twitter</a>
+            </li>
+            <li class="mob-soc__item">
+              <a href="#" class="mob-soc__link link">Facebook</a>
+            </li>
+            <li class="mob-soc__item">
+              <a href="#" class="mob-soc__link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>-->
     <main>
@@ -161,7 +219,7 @@
           </ul>
         </div>
       </section>
-      <section class="team section">
+      <!--<section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="people-list list">
@@ -191,9 +249,6 @@
                 <img src="./images/team/team-1-mob.jpg alt="Усміхнений хлопець в
                 окулярах" width="450" height="260" />
               </picture>
-              <img srcset="./images/team/team-1.jpg 1x,
-              ./images/team/team-1@2x.jpg 2x" src="./images/team/team-1.jpg
-              alt="Усміхнений хлопець в окулярах" width="270" height="260" />
               <div class="people-list__wrap">
                 <h3 class="people-list__name">Ігор Дем'яненко</h3>
                 <p class="people-list__job">Product Designer</p>
@@ -228,12 +283,31 @@
               </div>
             </li>
             <li class="people-list__item">
-              <img
-                src="./images/team/team-2.jpg"
-                alt="Дівчина в окулярах"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-2.jpg    1x,
+                    ./images/team/team-2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-2-tab.jpg    1x,
+                    ./images/team/team-2-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-2-mob.jpg    1x,
+                    ./images/team/team-2-mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team/team-2-mob.jpg alt="Усміхнений хлопець в
+                окулярах" width="450" height="260" />
+              </picture>
               <div class="people-list__wrap">
                 <h3 class="people-list__name">Ольга Рєпіна</h3>
                 <p class="people-list__job">Frontend Developer</p>
@@ -268,12 +342,31 @@
               </div>
             </li>
             <li class="people-list__item">
-              <img
-                src="./images/team/team-3.jpg"
-                alt="Усміхнений хлопець"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-3.jpg    1x,
+                    ./images/team/team-3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-3-tab.jpg    1x,
+                    ./images/team/team-3-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-3-mob.jpg    1x,
+                    ./images/team/team-3-mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team/team-3-mob.jpg alt="Усміхнений хлопець в
+                окулярах" width="450" height="260" />
+              </picture>
               <div class="people-list__wrap">
                 <h3 class="people-list__name">Микола Тарасов</h3>
                 <p class="people-list__job">Marketing</p>
@@ -308,12 +401,31 @@
               </div>
             </li>
             <li class="people-list__item">
-              <img
-                src="./images/team/team-4.jpg"
-                alt="Хлопець в окулярах"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-4.jpg    1x,
+                    ./images/team/team-4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-4-tab.jpg    1x,
+                    ./images/team/team-4-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/team-4-mob.jpg    1x,
+                    ./images/team/team-4-mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team/team-4-mob.jpg alt="Усміхнений хлопець в
+                окулярах" width="450" height="260" />
+              </picture>
               <div class="people-list__wrap">
                 <h3 class="people-list__name">Михайло Єрмаков</h3>
                 <p class="people-list__job">UI Designer</p>
@@ -349,7 +461,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
       <section class="clients section">
         <div class="container">
           <h2 class="clients__title">Постійні клієнти</h2>
@@ -394,87 +506,92 @@
         </div>
       </section>
     </main>
-    <!--<footer class="footer footer__container">
+    <footer class="footer footer__container">
       <div class="footer__address container">
-        <div class="requisites requisites__container">
-          <a class="logo footer__logo link" href="./index.html"
-            >Web<span class="logo--light">Studio</span></a
-          >
-          <address class="requisites__main">
-            <ul class="requisites__list list">
-              <li class="requisites__item">
-                <a
-                  class="requisites__map link"
-                  href="https://goo.gl/maps/8YUWCjoJRUapYNAK7"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer-tab__container">
+          <div class="requisites requisites__container">
+            <a class="logo footer__logo link" href="./index.html"
+              >Web<span class="logo--light">Studio</span></a
+            >
+            <address class="requisites__main">
+              <ul class="requisites__list list">
+                <li class="requisites__item">
+                  <a
+                    class="requisites__map link"
+                    href="https://goo.gl/maps/8YUWCjoJRUapYNAK7"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="requisites__item">
+                  <a
+                    class="requisites__link link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="requisites__item">
+                  <a class="requisites__link link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social social__container">
+            <p class="social__text">приєднуйтесь</p>
+            <ul class="social__list list">
+              <li class="social__item">
+                <a class="social__link link" href=""
+                  ><svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
               </li>
-              <li class="requisites__item">
-                <a
-                  class="requisites__link link"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="social__item">
+                <a class="social__link link" href=""
+                  ><svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
               </li>
-              <li class="requisites__item">
-                <a class="requisites__link link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+              <li class="social__item">
+                <a class="social__link link" href=""
+                  ><svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link link" href=""
+                  ><svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="social social__container">
-          <p class="social__text">приєднуйтесь</p>
-          <ul class="social__list list">
-            <li class="social__item">
-              <a class="social__link link" href=""
-                ><svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link link" href=""
-                ><svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link link" href=""
-                ><svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link link" href=""
-                ><svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
+
         <div class="subscription">
           <p class="subscription__title">Підпишіться на розсилку</p>
-          <form class="subscription__form">
-            <input
-              type="email"
-              name="subscription-email"
-              placeholder="E-mail"
-              class="subscription__input"
-            />
-            <button type="submit" class="subscription__btn">
-              Підписатися
-              <svg class="subscription__icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
+          <div class="footer-form">
+            <form class="subscription__form">
+              <input
+                type="email"
+                name="subscription-email"
+                placeholder="E-mail"
+                class="subscription__input"
+              />
+              <button type="submit" class="subscription__btn">
+                Підписатися
+                <svg class="subscription__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-    </footer>-->
-    <!--<div class="backdrop is-hidden" data-modal>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="modal-icon" width="18" height="18">
@@ -555,6 +672,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>-->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

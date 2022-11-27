@@ -1,6 +1,17 @@
 .contacts {
-    display: flex;
-    gap: 30px;
+display: none;
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 96px;
+    }
+    @media screen and (min-width:1200px) {
+        gap: 30px;
+    }
+}
+
+.cotacts__item{
+    margin-bottom: 10px;
 }
 
 .cotacts__link {
