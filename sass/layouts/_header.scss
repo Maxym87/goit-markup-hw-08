@@ -44,10 +44,8 @@
     border: none;
     background-color: transparent;
     margin-left: auto;
-    margin-right: 15px;
     @media screen and (min-width: 768px) {
             display: none;
-    
         }
 }
 
@@ -64,25 +62,25 @@
 .mob-menu {
 position: fixed;
     top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
     z-index: 1;
+    > .mob-menu__container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: auto;
+            width: 100%;
+            padding-top: 48px;
+            padding-bottom: 48px;
+            padding-left: 40px;
+            
+        }
     }
 
-.mob-menu__container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: auto;
-    width: 100%;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 40px;
-    padding-right: 48px;
-}
+
 
 .menu-close {
     display: block;
