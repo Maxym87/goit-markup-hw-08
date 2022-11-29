@@ -1,12 +1,14 @@
 .clients__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 0.84;
     text-align: center;
     color: var(--second-title-color);
     margin-bottom: 30px;
     @media screen and (min-width: 1200px) {
         margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 0.86;
     }
 }
 
