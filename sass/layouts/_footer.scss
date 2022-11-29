@@ -1,15 +1,15 @@
 
-.footer__address {
-    @media screen and(min-width:1200px){
-        display: flex;
-            align-items: baseline;
-    }
-}
-
 .footer__container {
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--second-background-color);
+}
+
+.footer__address {
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    }
 }
 
 .footer-tab__container {
@@ -19,26 +19,34 @@ justify-content: space-around;
 align-items: baseline;
     }
     @media screen and (min-width:1200px) {
-        margin-right: 94px;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
     }
 }
-.requisites__container{
- display: flex;
- flex-direction: column;
- align-items: center;
-@media screen and (min-width:320px) and (max-width:767px) {
-        margin-bottom: 60px;
-    margin-bottom: 60px;
-    @media screen and (min-width:768px) and (max-width:1199px) {
-        margin-bottom: 96px;
-    }
-    @media screen and (min-width:1200px) {
-margin-right: 94px;
-}
-}
-}
-.footer__logo{
+
+.footer__logo {
     margin-bottom: 28px;
+}
+
+.requisites__container {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+margin-bottom: 60px;
+@media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    @media screen and (min-width: 1200px) {
+        display: block;
+    margin-right: 93px;
+    text-align: start;
+    }
+}
+}
+
+.requisites__item:not(:last-child) {
+margin-bottom: 12px;
 }
 
 .requisites__map{
@@ -57,8 +65,9 @@ margin-right: 94px;
             }
 }
 
-.requisites__item:not(:last-child) {
-margin-bottom: 12px;
+.requisites__main {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .requisites__link{
@@ -78,15 +87,9 @@ margin-bottom: 12px;
             }
 }
 
-.social__container{
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 60px;
-        @media screen and (min-width: 12000px) {
-            margin-right: 93px;
-        }
-}
+
+/*----------------------ADDRESS---------------------*/
+
 
 .social__text{
 font-weight: 700;
@@ -97,6 +100,9 @@ font-weight: 700;
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
 }
 
 .social__list {
@@ -115,7 +121,6 @@ font-weight: 700;
     height: 100%;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,30 +138,36 @@ font-weight: 700;
     fill: #FFFFFF;
 }
 
-.subscription {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 60px;
-}
 
-.footer-form {
+/*---------------FORM--------------------------*/
+
+.subscription__container {
+    margin-top: 60px;
     @media screen and (min-width: 1200px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
+    margin-top: 0;
+    margin-left: 94px;
     }
 }
 
 .subscription__title{
     font-weight: 700;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 0.88;
         text-align: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #FFFFFF;
         margin-bottom: 20px;
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
+}
+
+.subscription__form {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    } 
 }
 
 .subscription__input {
@@ -166,7 +177,6 @@ font-weight: 700;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
-    margin-right: 12px;
     transition-property: border-color;
     transition-duration: var(--main-trans-duration);
     transition-timing-function: var(--main-trans-timing-func);
@@ -185,14 +195,17 @@ margin-bottom: 20px;
     &:focus {
         border-color: var(--accent-color);
     }
+
     @media screen and (min-width:768px) {
         margin-left: 159px;
         margin-right: 159px;
     }
-         @media screen and (min-width:1200px) {
-             margin-left: auto;
-             margin-right: auto;
-         }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-left: auto;
+            margin-right: 12px;
+            margin-bottom: 0;
+    }
 }
 
 .subscription__btn {
