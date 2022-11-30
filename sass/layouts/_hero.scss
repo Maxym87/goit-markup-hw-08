@@ -1,4 +1,5 @@
 .hero {
+    width: 100%;
     padding-top: 118px;
         padding-bottom: 118px;
         background-color: var(--second-background-color);
@@ -13,11 +14,12 @@
                             rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile-2x.jpg);
             }
 @media screen and (min-width: 768px) {
+    width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tab.jpg);
                 @include retina {
                     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                                rgba(47, 48, 58, 0.4)), url(../images/hero-tab@2x.jpg);
+                                rgba(47, 48, 58, 0.4)), url(/images/hero/hero-tab-2x.jpg);
                     }
 }
         @media screen and (min-width: 1200px) {
