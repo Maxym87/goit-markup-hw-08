@@ -1,13 +1,25 @@
 .gallery {
-    display: flex;
+    flex-direction: column;
+display: flex;
     flex-wrap: wrap;
     gap: 30px;
-
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+    }
+    
 }
 
 .gallery__item {
-    flex-basis: calc((100% - 60px) / 3);
     background: var(--background-items-color);
+    @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 60px) / 3);
+        }
 }
 
 .gallery__link {

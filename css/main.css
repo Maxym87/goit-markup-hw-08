@@ -1307,10 +1307,22 @@ body {
 }
 
 .filters {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .filters {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters {
+    margin-bottom: 50px;
+  }
 }
 
 .filters__btn {
@@ -1337,14 +1349,32 @@ body {
 }
 
 .gallery {
+  flex-direction: column;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .gallery {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 
 .gallery__item {
-  flex-basis: calc((100% - 60px) / 3);
   background: var(--background-items-color);
+}
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .gallery__link {

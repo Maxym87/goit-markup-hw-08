@@ -1,9 +1,18 @@
 .filters {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     gap: 8px;
+    @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+    }
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
 }
+}
+
 
 .filters__btn {
     font-family: inherit;
